@@ -1,0 +1,32 @@
+===============================================================================
+  PARCHE QTRANSLATE - Reactivar el traductor de Google
+===============================================================================
+
+QUE HACE ESTE PARCHE
+--------------------
+Reemplaza el motor de Google Translate en QTranslate por una version con
+endpoints actualizados que no requieren generacion dinamica de tokens (tk):
+
+  Traduccion y deteccion de idioma:
+      https://clients5.google.com/translate_a/t?client=dict-chrome-ex
+  Voz / pronunciacion:
+      https://translate.google.com/translate_tts?client=tw-ob
+
+COMO INSTALARLO
+---------------
+1. Descomprime TODOS los archivos de este ZIP en una misma carpeta.
+2. Haz doble clic en INSTALAR.bat.
+3. Acepta los permisos de administrador de Windows.
+
+El instalador cerrara QTranslate, hara copia de seguridad del archivo original,
+copiara el nuevo Service.js en UTF-8 sin BOM, activara Google como traductor
+predeterminado y volvera a abrir el programa.
+
+INSTALACION MANUAL (Si el antivirus bloquea el .bat)
+----------------------------------------------------
+1. Cierra QTranslate completamente desde el icono junto al reloj.
+2. Copia el archivo Service.js dentro de:
+      C:\Program Files (x86)\QTranslate\Services\Google Translate\
+   (o en C:\Program Files\QTranslate\Services\Google Translate\)
+3. Abre QTranslate y selecciona Google como servicio de traduccion.
+===============================================================================
